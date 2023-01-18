@@ -225,11 +225,13 @@ section table, section div {
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: auto;
   justify-content: center;
   align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img{
-  width: 300px;
+  width: 100px;
+  margin: auto;
 }
 .pie-pagina .grupo-1 .box h2{
   color: #fff;
@@ -243,15 +245,23 @@ section table, section div {
 .pie-pagina .grupo-1 .red-social a{
   display: inline-block;
   text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   color: #fff;
   margin-right: 10px;
-  background-color: #0d2033;
   text-align: center;
   transition: all 300ms ease;
 }
+
+.red-social{
+text-align: center;
+}
+
+.red-social figure{
+  text-align: center;
+  }
+
 .pie-pagina .grupo-1 .red-social a:hover{
   color: aqua;
 }
@@ -287,5 +297,9 @@ section table, section div {
 
 img{
 overflow: auto;
-margin: 10px;
+}
+
+.red-social a img{
+ max-width: 30px;
+ display: flex;
 }
