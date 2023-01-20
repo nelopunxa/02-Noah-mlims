@@ -218,6 +218,33 @@ section table, section div {
 
 /*:::::Pie de Pagina*/
 
+
+.logo-1{
+ width: 25%;
+}
+
+.box-1{
+ width: 75%;
+}
+
+.col-1, .col-2{
+ display: flex;
+}
+
+.logo-1 figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-1 figure img{
+  width: 40px;
+  margin: auto;
+}
+
 .pie-pagina{
   width: 100%;
   background-color: #0a141d;
@@ -233,20 +260,6 @@ section table, section div {
   padding: 45px 0px;
 }
 
-.pie-pagina .grupo-1 .box figure{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  overflow: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img{
-  width: 100px;
-  margin: auto;
-}
-
 .pie-pagina .grupo-1 .box h2{
   color: #fff;
   margin-bottom: 25px;
@@ -258,7 +271,7 @@ section table, section div {
   margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social a{
+.red-social a{
   display: inline-block;
   text-decoration: none;
   width: 30px;
@@ -315,4 +328,14 @@ text-align: center;
 .red-social a img{
  max-width: 30px;
  display: flex;
+}
+
+/* Pagina Rooster */
+
+.ejecutivos{
+ margin: 40px;
+}
+
+.jugadores{
+ margin: 40px;
 }
