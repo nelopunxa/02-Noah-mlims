@@ -4,14 +4,14 @@
     src: url('../fnt/Roboto/Roboto-Regular.ttf');
     font-style: normal;
     font-weight: 400 700;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Roboto';
     src: url('../fnt/Roboto/Roboto-Light.ttf');
     font-style: normal;
     font-weight: 100 300;
-  }
+}
 
 * {
     margin: 0;
@@ -95,7 +95,7 @@ header nav ul li a {
     display: block;
 }
 
-header nav ul li:hover a{
+header nav ul li:hover a {
     font-size: 20px;
 }
 
@@ -103,7 +103,7 @@ header li:hover {
     background-color: #b30f42;
 }
 
-.active{
+.active {
     background-color: #b30f42;
     padding: 21px 0;
 }
@@ -117,7 +117,7 @@ h1 {
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
-    color:  #b30f42;
+    color: #b30f42;
     margin: 20px 0;
 }
 
@@ -129,6 +129,10 @@ header img {
     float: right;
     height: 60px;
     margin: 10px;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 0px #b30f42,
+        0 0 1em #b30f42;
 }
 
 /* --------------------|| Flex Settings --------------------*/
@@ -197,16 +201,31 @@ section p {
     text-align: center;
 }
 
+.section-banner img {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 1px #b30f42,
+        0 0 1.3em #b30f42;
+}
+
 
 /* --------------------|| Aside Settings --------------------*/
 
 
-aside{
-    background-color:  #0d2033;
+aside {
+    background-color: #0d2033;
     margin: 5px 0;
+    text-align: center;
 }
 
 /* || Section text & Images*/
+
+
+aside h2{
+    margin: 20px;
+    text-transform: uppercase;
+    color: #b30f42;
+}
 
 
 aside {
@@ -214,10 +233,8 @@ aside {
     padding: 1%;
 }
 
-aside a {
-    display: block;
-    float: left;
-    width: 50%;
+aside a{
+    text-decoration: none;
 }
 
 
@@ -226,6 +243,17 @@ aside a {
 
 aside img {
     max-width: 100%;
+}
+
+
+/* || Aside Figcaptions*/
+
+
+aside figcaption{
+    margin-bottom: 20px;
+    margin-top: 3px;
+    color: white;
+    text-transform: uppercase;
 }
 
 
@@ -263,11 +291,11 @@ footer a {
     font-weight: 300;
 }
 
-footer a:hover{
+footer a:hover {
     color: #b30f42;
 }
 
-footer .red-social a:hover img{
+footer .red-social a:hover img {
     max-width: 25px;
     display: inline-block;
     align-items: center;
@@ -392,20 +420,20 @@ footer .red-social a:hover img{
     display: flex;
 }
 
-.div1{
+.div1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-footer ul{
+footer ul {
     color: white;
 }
 
-.social-networks > h2{
+.social-networks>h2 {
     text-align: center;
 }
 
-.box-1 h2{
+.box-1 h2 {
     margin-bottom: 5px;
 }
 
@@ -415,66 +443,117 @@ footer ul{
 /* || Executive & Bosses Settings*/
 
 
-section #owners{
+section #owners {
     color: #b30f42;
     text-align: center;
     display: block;
 }
 
-section .ejecutivos{
+section .ejecutivos {
     text-align: center;
     margin: 15px;
     margin-bottom: 100px;
 }
 
-section .ejecutivos img{
+section .ejecutivos img {
     text-align: center;
     margin: 5px;
 }
-
 
 /* || Pro Players Settings*/
 
 
-section #players{
+section #players {
     color: #b30f42;
     text-align: center;
     display: block;
 }
 
-section .jugadores{
+section .jugadores {
     text-align: center;
     margin: 15px;
     margin-bottom: 100px;
 }
 
-section .jugadores img{
+
+/* ------------------------------------ || Figcaption & Images Settings ------------------------------------*/
+
+
+section .jugadores img {
     text-align: center;
-    margin: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.jugadores figure {
+    display: inline-block;
+}
+
+.jugadores figcaption {
+    background-color: #b30f42;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+section .jugadores figcaption {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+section .jugadores img:hover {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 1px #b30f42,
+        0 0 2em #b30f42;
 }
 
 
-/* || Players Text Settings*/
+/* || Classes & ID Settings*/
 
 
-#texto-jugadores{
+#texto-jugadores {
     width: 80%;
     margin: 0 auto;
 }
 
-#texto-jugadores p{
+#texto-jugadores p {
     font-size: 22px;
     font-family: 'Roboto', arial, sans-serif;
     font-weight: 300;
 }
 
-#texto-jugadores h2{
+#texto-jugadores h2 {
     font-size: 200%;
     color: #b30f42;
 }
 
-.todos-textos{
+.todos-textos {
     margin-bottom: 60px;
 }
 
+.section-text-rooster{
+    background-image: url(../imagenes/fondos/imagen.png);
+}
+
+
+/* || Circle Image Format Class*/
+
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.circle-sponsors {
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
 
