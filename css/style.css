@@ -1,5 +1,17 @@
 /* ----------------------------------------------------------|| General Setup ----------------------------------------------------------*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fnt/Roboto/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: 400 700;
+  }
 
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fnt/Roboto/Roboto-Light.ttf');
+    font-style: normal;
+    font-weight: 100 300;
+  }
 
 * {
     margin: 0;
@@ -54,19 +66,24 @@ header nav {
     background-color: #0d2033;
     color: rgb(255, 255, 255);
     clear: both;
+    height: 4em;
+    display: flex;
+    align-items: stretch;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 header nav ul li {
-    padding: 15px;
+    padding: 20px 0;
     text-align: center;
-    flex: 1;
     list-style: none;
+    width: 100%;
 }
 
 header nav ul li a {
@@ -75,6 +92,7 @@ header nav ul li a {
     font-weight: 600;
     color: white;
     font-size: 18px;
+    display: block;
 }
 
 header nav ul li:hover a{
@@ -87,6 +105,7 @@ header li:hover {
 
 .active{
     background-color: #b30f42;
+    padding: 21px 0;
 }
 
 /* || Header Title*/
@@ -147,7 +166,7 @@ section h3 {
 
 section h2,
 section h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #2a2a2a;
     margin: 10px;
     color: whitesmoke;
@@ -250,6 +269,7 @@ footer a:hover{
 
 footer .red-social a:hover img{
     max-width: 25px;
+    display: inline-block;
     align-items: center;
 }
 
@@ -388,3 +408,73 @@ footer ul{
 .box-1 h2{
     margin-bottom: 5px;
 }
+
+/* ---------------------------------------------|| Rooster Page ---------------------------------------------*/
+
+
+/* || Executive & Bosses Settings*/
+
+
+section #owners{
+    color: #b30f42;
+    text-align: center;
+    display: block;
+}
+
+section .ejecutivos{
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 100px;
+}
+
+section .ejecutivos img{
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* || Pro Players Settings*/
+
+
+section #players{
+    color: #b30f42;
+    text-align: center;
+    display: block;
+}
+
+section .jugadores{
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 100px;
+}
+
+section .jugadores img{
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* || Players Text Settings*/
+
+
+#texto-jugadores{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#texto-jugadores p{
+    font-size: 22px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 300;
+}
+
+#texto-jugadores h2{
+    font-size: 200%;
+    color: #b30f42;
+}
+
+.todos-textos{
+    margin-bottom: 60px;
+}
+
+
