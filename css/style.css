@@ -493,6 +493,11 @@ section .jugadores {
     margin-bottom: 100px;
 }
 
+section .Events {
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 100px;
+}
 
 /* ------------------------------------ || Figcaption & Images Settings ------------------------------------*/
 
@@ -504,11 +509,29 @@ section .jugadores img {
     margin-top: 5px;
 }
 
+section .Events img {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 .jugadores figure {
     display: inline-block;
 }
 
+.Events figure {
+    display: inline-block;
+}
+
 .jugadores figcaption {
+    background-color: #b30f42;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.Events figcaption {
     background-color: #b30f42;
     color: white;
     text-transform: uppercase;
@@ -522,6 +545,13 @@ section .jugadores figcaption {
     margin-bottom: 20px;
 }
 
+section .Events figcaption {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
 section .jugadores img:hover {
     box-shadow:
         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -529,6 +559,12 @@ section .jugadores img:hover {
         0 0 2em #b30f42;
 }
 
+section .Events img:hover {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 1px #b30f42,
+        0 0 2em #b30f42;
+}
 
 /* || Classes & ID Settings*/
 
@@ -738,6 +774,19 @@ inset 0 -3em 3em rgba(0, 0, 0, 0.1),
 0 0 2em #b30f42;
 }
 
+#bugha-video iframe:hover{
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 0px #b30f42,
+    0 0 2em #b30f42;
+}
+
+#bugha-video{
+    display:block;
+    margin: 10px;
+    text-align: center;
+}
+
 #trailer-videos{
     text-align: center;
 }
@@ -783,6 +832,7 @@ font-size: 200%;
         0 0 0 1px #b30f42,
         0 0 2em #b30f42;
 }
+
 
 
 /* ABOUT WEBPAGE SETTINGS
