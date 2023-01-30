@@ -17,84 +17,88 @@
         <img class="circle" src="imagenes/LOGO.jpg" alt="logo">
         <nav>
             <ul>
-                <li><a href="index.html">3TIMES - HOME</a></li>
+                <li class="active"><a href="index.html">3TIMES - HOME</a></li>
                 <li><a href="rooster.html">ROOSTER</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="events.html">EVENTS</a></li>
-                <li><a href="merchandaising.html">MERCHANDAISING</a></li>
-                <li class="active"><a href="signup.html">SIGN UP</a></li>
+                <li><a href="merchandaising.html">MERCH</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="sign-up">
             <article>
                 <h2>SIGN UP</h2>
+                <div id="sign-up-div">
+                    <h3>User information</h3>
+                    <form>
+                        <p>
+                            <label for="name">Name: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="text" id="name" name="name">
+                        </p>
 
-                <h3>User information</h3>
+                        <p>
+                            <label for="surname">Surname: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="text" id="surname" name="surname">
+                        </p>
 
-                <p>
-                    <label for="name">Name: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="text" id="name" name="name">
-                </p>
+                        <p>
+                            <label for="username">Username: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="text" id="username" name="username">
+                        </p>
 
-                <p>
-                    <label for="surname">Surname: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="text" id="surname" name="surname">
-                </p>
+                        <p>
+                            <label for="paswd">Password: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="password" id="paswd" name="paswd">
+                        </p>
 
-                <p>
-                    <label for="username">Username: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="text" id="username" name="username">
-                </p>
+                        <p>
+                            <label for="birthdate">Birthdate: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="date" id="birthdate" name="birthdate">
+                        </p>
 
-                <p>
-                    <label for="paswd">Password: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="password" id="paswd" name="paswd">
-                </p>
+                        <label for="sex">
+                            <span>Select your gender:</span>
+                        </label>
+                        <select id="sex" name="select_sex">
+                            <option>Men</option>
+                            <option>Women</option>
+                            <option>No Binary</option>
+                        </select>
 
-                <p>
-                    <label for="birthdate">Birthdate: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="date" id="birthdate" name="birthdate">
-                </p>
+                        <p>
+                            <label for="e-mail">E-mail: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="email" id="e-mail" name="e-mail">
+                        </p>
 
-                <label for="sex">
-                    <span>Select your gender:</span>
-                </label>
-                <select id="sex" name="select_sex">
-                    <option>Men</option>
-                    <option>Women</option>
-                    <option>No Binary</option>
-                </select>
+                        <p>
+                            <label for="phone">Phone: <strong><abbr title="required">*</abbr></strong></label>
+                            <input type="text" id="phone" name="phone">
+                        </p>
 
-                <p>
-                    <label for="e-mail">E-mail: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="email" id="e-mail" name="e-mail">
-                </p>
+                        <p>
+                            <label for="online"></label>
+                            <input type="radio" id="online" name="k" value="online"> Accept our terms and politics
+                        </p>
 
-                <p>
-                    <label for="phone">Phone: <strong><abbr title="required">*</abbr></strong></label>
-                    <input type="text" id="phone" name="phone">
-                </p>
+                        <p>
+                            <label for="facetoface"></label>
+                            <input type="radio" id="facetoface" name="k" value="facetoface"> Don't accept our terms and
+                            politics
+                        </p>
 
-                <p>
-                    <label for="online"></label>
-                    <input type="radio" id="online" name="k" value="online"> Accept our terms and politics
-                </p>
-
-                <p>
-                    <label for="facetoface"></label>
-                    <input type="radio" id="facetoface" name="k" value="facetoface"> Don't accept our terms and politics
-                </p>
-
-                <div class="boton">
-                    <label for="registrar"></label>
-                    <button type="submit" name="registrar" id="registrar" value="Sign UP">Sign Up</button>
+                        <div class="boton">
+                            <button type="submit" name="registrar" id="registrar" value="Sign UP">Sign Up</button>
+                        </div>
+                        <div class="boton">
+                            <button type="reset" name="reset" id="resetear" value="Reset">Reset</button>
+                        </div>
+                    </form>
                 </div>
-
             </article>
         </section>
     </main>

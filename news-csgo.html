@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
-    <title>VALORANT-NEWS</title>
+    <title>News valorant</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
@@ -16,12 +16,12 @@
         <img class="circle" src="imagenes/LOGO.jpg" alt="logo">
         <nav>
             <ul>
-                <li><a href="index.html">3TIMES - HOME</a></li>
+                <li class="active"><a href="index.html">3TIMES - HOME</a></li>
                 <li><a href="rooster.html">ROOSTER</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="events.html">EVENTS</a></li>
-                <li><a href="merchandaising.html">MERCHANDAISING</a></li>
+                <li><a href="merchandaising.html">MERCH</a></li>
                 <li><a href="signup.html">SIGN UP</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
@@ -29,49 +29,65 @@
     </header>
 
     <main>
-        <article>
-            <section>
+        <section>
+            <article>
+                <h2>News</h2>
+                <div id="tabla">
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Partidos Ganados </td>
+                                <td>Partidos Perdidos</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3Times vs Faze Clan</td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>3Times vs Team Liquid</td>
+                                <td>X</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3Times vs NRG eSports</td>
+                                <td></td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Five Academy</td>
+                                <td>X</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <h2>PROXIMAMENTE</h2>
+            </article>
+        </section>
+        <section>
+            <article>
+                <nav id="navegador-articulos">
+                    <ul>
+                        <li><a href="news.html">ALL</a></li>
+                        <li class="active"><a href="news-csgo.html">CS:GO</a></li>
+                        <li><a href="news-valorant.html">VALORANT</a></li>
+                        <li><a href="events.html">TEAM - EVENTS</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article id="articles">
+                <div>
+                    <a id="counter" href="article1.html"><img src="imagenes/índice.jpeg" height="200" width="350"
+                            alt="Article 1"></a>
+                </div>
 
-            </section>
-        </article>
-        <aside class="col-3">
-            <h2>Team Sponsors</h2>
-
-            <div>
-                <figure>
-                    <a
-                        href="https://www.logitechg.com/en-eu?gclid=Cj0KCQiAic6eBhCoARIsANlox85XLZsfI4K5kSyCO0j2TCyMiEQoMDPTymWvQHaPHYacnpFUDWmXJFUaAiprEALw_wcB">
-                        <img class="circle-sponsors" src="imagenes/logitech.jpg" alt="Logitech Logo">
-                        <figcaption>Logitech</figcaption>
-                    </a>
-                </figure>
-            </div>
-
-            <div>
-                <figure>
-                    <a href="https://es.steelseries.com/">
-                        <img class="circle-sponsors" src="imagenes/steelseries.jpg" alt="Steelseries Logo">
-                        <figcaption>Steelseries</figcaption>
-                    </a>
-                </figure>
-            </div>
-
-            <div>
-                <figure>
-                    <a href="https://www.cruzcampo.es/">
-                        <img class="circle-sponsors" src="imagenes/cruzcampo_logo_portada.jpg" alt="Cruzcampo Logo">
-                        <figcaption>Cruzcampo</figcaption>
-                    </a>
-                </figure>
-            </div>
-
-        </aside>
-
+            </article>
+        </section>
     </main>
-
-    <!--::::Pie de Pagina::::::-->
 
     <footer class="pie-pagina">
         <div class="row div1">
