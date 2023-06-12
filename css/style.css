@@ -63,15 +63,14 @@ header {
 }
 
 header nav {
-    background-color: #0d2033;
+    display: block;
     color: rgb(255, 255, 255);
     clear: both;
     height: 4em;
-    display: flex;
-    align-items: stretch;
 }
 
 header nav ul {
+    background-color: #0d2033;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -92,7 +91,7 @@ header nav ul li a {
     font-weight: 600;
     color: white;
     font-size: 18px;
-    display: block;
+    display: inline-block;
 }
 
 header nav ul li:hover a {
@@ -143,7 +142,6 @@ main {
 }
 
 section {
-
     min-width: 80%;
     padding: 2em 3em;
 }
@@ -330,8 +328,7 @@ footer .red-social a:hover img {
     width: 75%;
 }
 
-.col-1,
-.col-2 {
+.col-1,.col-2 {
     display: flex;
 }
 
@@ -460,6 +457,10 @@ footer ul {
 
 /* || Executive & Bosses Settings*/
 
+.conjunto{
+    display: flex;
+    width: 100%;
+}
 
 section #owners {
     color: #b30f42;
@@ -469,7 +470,6 @@ section #owners {
 
 section .ejecutivos {
     text-align: center;
-    margin: 15px;
     margin-bottom: 100px;
 }
 
@@ -489,8 +489,25 @@ section #players {
 
 section .jugadores {
     text-align: center;
-    margin: 15px;
     margin-bottom: 100px;
+}
+
+section .imagenes-players{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .imagenes-players  a{
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: block;
+    margin: 1px;
+}
+
+section .imagenes-players img{
+ width: 100%;
+ height: 200px;
+ object-fit:cover;
 }
 
 section .Events {
@@ -504,6 +521,14 @@ section .Events {
 
 section .jugadores img {
     text-align: center;
+}
+
+section .imagenes-players figcaption{
+    margin-bottom: 10px;
+}
+
+section .Events {
+    text-align: center;
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 5px;
@@ -514,10 +539,6 @@ section .Events img {
     margin-right: 5px;
     margin-left: 5px;
     margin-top: 5px;
-}
-
-.jugadores figure {
-    display: inline-block;
 }
 
 .Events figure {
@@ -536,13 +557,6 @@ section .Events img {
     color: white;
     text-transform: uppercase;
     text-decoration: underline;
-}
-
-section .jugadores figcaption {
-    text-align: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 20px;
 }
 
 section .Events figcaption {
@@ -614,22 +628,25 @@ section .Events img:hover {
 
 /* Nav Article News Settings */
 
+.contenedor{
+    display: block;
+    margin : 10px;
+}
+
 #navegador-articulos {
-    background-color: #0d2033;
     color: rgb(255, 255, 255);
     clear: both;
     height: 4em;
-    display: flex;
     align-items: stretch;
-    margin: 10px;
 }
 
 #navegador-articulos ul {
+    background-color: #0d2033;
     list-style-type: none;
-    display: flex;
     justify-content: center;
     width: 100%;
     align-items: center;
+    display: flex;
 }
 
 #navegador-articulos ul li {
