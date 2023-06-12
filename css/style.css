@@ -510,11 +510,7 @@ section .imagenes-players img{
  object-fit:cover;
 }
 
-section .Events {
-    text-align: center;
-    margin: 15px;
-    margin-bottom: 100px;
-}
+
 
 /* ------------------------------------ || Figcaption & Images Settings ------------------------------------*/
 
@@ -528,17 +524,16 @@ section .imagenes-players figcaption{
 }
 
 section .Events {
-    text-align: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .Events a{
+    margin: 1px;
 }
 
 section .Events img {
-    text-align: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
+    object-fit: cover;
 }
 
 .Events figure {
@@ -561,9 +556,6 @@ section .Events img {
 
 section .Events figcaption {
     text-align: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 20px;
 }
 
 section .jugadores img:hover {
@@ -727,10 +719,11 @@ section .Events img:hover {
 #tabla table {
     color: white;
     margin: 0 auto;
+
 }
 
 .tabla tr,
-.tabla td {
+.tabla td, .tabla th {
     padding: 15px;
     border: 1px solid #b30f42;
 }
@@ -741,14 +734,6 @@ table {
     font-size: 0.8rem;
 }
 
-td,th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 10px 20px;
-}
-
-th {
-    background-color: rgb(235, 235, 235);
-}
 
 td {
     text-align: center;
@@ -760,8 +745,8 @@ td {
 
 #counter-video{
     display:inline-block;
-    margin: 10px;
 }
+
 #counter-video h3{
 color: #b30f42;
 text-transform: uppercase;
@@ -769,7 +754,6 @@ text-transform: uppercase;
 
 #valo-video{
     display:inline-block;
-    margin: 10px;
 }
 
 #valo-video h3{
@@ -821,8 +805,14 @@ inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     margin: 20px;
 }
 
+#peripherals div{
+    display: flex;
+    justify-content: center;
+}
+
 #peripherals figure{
     display: inline-block;
+    align-items: center;
     margin: 20px;
 }
 
